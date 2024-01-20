@@ -1,0 +1,10 @@
+
+<div title="Data Binding Example"></div>
+<div><input type="text" [(ngModel)]="bindingvalue"  />  You type {{bindingvalue}}</div>
+<div title="Product List"></div>
+<div>
+    <li *ngFor="let item of productList; let i=index"> 
+          <label> {{ item.name }} </label> <label *ngIf="(item.id % 2)!=1">{{ item.price }} </label>
+        </li>
+</div>
+<input type="button" value="Invoice" (click)="navigateInvoice()" />

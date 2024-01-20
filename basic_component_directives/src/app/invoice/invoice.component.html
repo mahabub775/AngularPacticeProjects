@@ -1,0 +1,14 @@
+<h3>Invoice</h3>
+    <div>
+        <form [formGroup]="invoicecform" (submit)="submitInvoice()">
+            <label >Customer</label>
+            <input  type="text" formControlName="customerName">
+    
+            <label >Product Name</label>
+            <input  type="text" formControlName="productName">
+    
+            <label >Price</label>
+            <input type="number" formControlName="price">
+            <button type="submit" class="primary">Create</button>
+          </form>
+    </div>
